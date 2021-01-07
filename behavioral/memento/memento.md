@@ -59,6 +59,8 @@ originator.restore(caretaker.pop()) // `Ctrl+Z`
 
 originator.setContent('anything more')
 caretaker.push(originator.createState())
+
+originator.restore(caretaker.pop()) // `Ctrl+Z`
 ```
 
 ---
