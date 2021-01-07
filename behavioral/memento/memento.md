@@ -1,4 +1,4 @@
-# Memento (snapshot)
+# Memento (snapshot) pattern
 
 Memento pattern says how to save and undo/reuse object state.
 
@@ -12,7 +12,7 @@ How would you do that feature avoiding violation of main principles?
 
 Memento pattern creates snapshot of the Editor's State saving it to History list. Saved States can later be used from `History.pop()` method to restore State via `Editor.restore(s: State)`.
 
-## Interfaces
+## Scheme
 
 ### Class Originator (Editor)
 
@@ -20,9 +20,9 @@ Memento pattern creates snapshot of the Editor's State saving it to History list
   - content: String
 - methods
   - createState(): Memento
-  - restore(s: Memento)
+  - restore(m: Memento)
 
-### Class Memento (State)
+### Interface Memento (State)
 
 - fields
   - content: String
@@ -32,9 +32,7 @@ Memento pattern creates snapshot of the Editor's State saving it to History list
 - fields
   - states: Memento[]
 - methods
-  - push(s: Memento)
+  - push(m: Memento)
   - pop()
 
-## Scheme
-
-TODO
+TODO: add scheme image
