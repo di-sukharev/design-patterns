@@ -46,3 +46,20 @@ All classes that implement state dependent logic should be based on one single i
   - +setContext(c: Context)
   - +doSomething()
   - +doAnything()
+
+### Client
+
+Example of how code is used
+
+```javaScript
+initialState = new SomeConcreteState()
+context = new Context(initialState)
+initialState.setContext(context)
+context.doSomething()
+context.doAnything()
+
+otherState = new AnyConcreteState()
+context.changeState(otherState)
+context.doSomething()
+context.doAnything()
+```
