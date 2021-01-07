@@ -1,4 +1,4 @@
-# Memento (snapshot) pattern
+# Memento or Snapshot pattern
 
 Memento pattern says how to save and undo/reuse object state.
 
@@ -19,6 +19,7 @@ Memento pattern creates snapshot of the Editor's State saving it to History list
 - fields
   - -content: String
 - methods
+  - +setContent(c: String) // `this.content = c`
   - +createState(): Memento
   - +restore(m: Memento)
 
@@ -36,5 +37,30 @@ Memento pattern creates snapshot of the Editor's State saving it to History list
 - methods
   - +push(m: Memento)
   - -pop()
+
+### Client
+
+Example of how code is used
+
+```javaScript
+originator = new Originator()
+caretaker = new Caretaker()
+
+originator.setContent('something')
+caretaker.push(originator.createState())
+
+originator.setContent('anything')
+caretaker.push(originator.createState())
+
+originator.setContent('something more')
+caretaker.push(originator.createState())
+
+originator.restore(caretaker.pop()) // `Ctrl+Z`
+
+originator.setContent('anything more')
+caretaker.push(originator.createState())
+```
+
+---
 
 TODO: add scheme image
