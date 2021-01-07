@@ -17,22 +17,24 @@ Memento pattern creates snapshot of the Editor's State saving it to History list
 ### Class Originator (Editor)
 
 - fields
-  - content: String
+  - -content: String
 - methods
-  - createState(): Memento
-  - restore(m: Memento)
+  - +createState(): Memento
+  - +restore(m: Memento)
 
 ### Interface Memento (State)
 
 - fields
-  - content: String
+  - -content: String
+- methods
+  - +getContent(): String
 
 ### Class Caretaker (History)
 
 - fields
-  - states: Memento[]
+  - -states: Memento[]
 - methods
-  - push(m: Memento)
-  - pop()
+  - +push(m: Memento)
+  - -pop()
 
 TODO: add scheme image
