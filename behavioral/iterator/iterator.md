@@ -40,3 +40,24 @@ Each collection should have an Iterator. Iterator implements the iteration algor
   - +constructor(c: ConcreteCollection) // `this.collection = c`
   - +getNext()
   - +hasMore(): bool
+
+### Client
+
+Example of how code is used
+
+```javaScript
+tree = new TreeCollection
+treeIterator = tree.createIterator()
+
+iterator.next()
+iterator.next()
+iterator.next()
+
+list = new ListCollection
+listIterator = list.createIterator()
+
+iterator.next()
+iterator.next()
+
+…
+```
