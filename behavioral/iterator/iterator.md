@@ -39,7 +39,7 @@ Each collection should have an Iterator. Iterator implements the iteration algor
   - -collection: ConcreteCollection
   - -iterationState
 - methods
-  - +constructor(c: ConcreteCollection) // `this.collection = c`
+  - constructor(c: ConcreteCollection) // `this.collection = c`
   - +getNext()
   - +hasMore(): bool
 

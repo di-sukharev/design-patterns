@@ -29,7 +29,7 @@ All classes that implement state dependent logic should be based on one single i
 - fields
   - -state: State
 - methods
-  - +constructor(initState: State) // calling `changeState(initState)`
+  - constructor(initState: State) // calling `changeState(initState)`
   - +changeState(s: State) // calling `this.state = State; this.state.setContext(this)`
   - +doSomething() // calling `this.state.doSomething()`
   - +doAnything() // calling `this.state.doAnything()`
