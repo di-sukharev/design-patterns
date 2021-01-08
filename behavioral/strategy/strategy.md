@@ -1,5 +1,7 @@
 # Strategy pattern
 
+Behavioral pattern.
+
 Strategy pattern combines algorithms with a single interface, which allows you to replace algorithms with each other at runtime.
 
 ## Problem

@@ -1,5 +1,7 @@
 # State pattern
 
+Behavioral pattern.
+
 State pattern manages object behaviour when object is dependent on different states.
 
 ## Problem

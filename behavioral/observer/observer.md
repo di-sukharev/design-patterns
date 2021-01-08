@@ -1,5 +1,7 @@
 # Observer pattern
 
+Behavioral pattern.
+
 Observer pattern allows one objects to observe other objects, waiting for an event they subscribed for.
 
 ## Problem

@@ -1,5 +1,7 @@
 # Iterator pattern
 
+Behavioral pattern.
+
 Iterator provides single interface to iterate over data structures with different implementation.
 
 ## Problem

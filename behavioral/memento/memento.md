@@ -1,5 +1,7 @@
 # Memento or Snapshot pattern
 
+Behavioral pattern.
+
 Memento pattern says how to save and undo/reuse object state.
 
 ## Problem

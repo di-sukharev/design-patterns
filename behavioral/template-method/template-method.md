@@ -1,5 +1,7 @@
 # Template method pattern
 
+Behavioral pattern.
+
 Template method pattern manages algorithms that have similar code in general, but some steps are different. These pattern separates different steps into sub-classes without changing it general structure.
 
 ## Problem

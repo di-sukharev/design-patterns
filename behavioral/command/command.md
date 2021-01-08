@@ -1,5 +1,7 @@
 # Command pattern
 
+Behavioral pattern.
+
 Command pattern provides an extra layer between UI and business logic. UI button calls a command and the command calls a business logic. This allows translate requests into objects, log objects, put them in a queue or undo requests.
 
 ## Problem
