@@ -7,7 +7,7 @@ Pipeline consists of handlers, each handler decide whether request should go to 
 
 ## Problem
 
-Suppose you handle a HTTP request. You want to process the request sequentually. First request should be validated, then you want to authenticate user and do something else in the end. You could hardcode the process in a procedural way in some request handler, but this isn't scalable, you would need to duplicate the code in all other handlers which have the same pipeline.
+Suppose you handle a HTTP request. You want to process the request sequentially. First request should be validated, then you want to authenticate user and do something else in the end. You could hardcode the process in a procedural way in some request handler, but this isn't scalable, you would need to duplicate the code in all other handlers which have the same pipeline.
 
 Also hardcoding the pipeline process in a class leads to coupling and lots of if/else spaghetti.
 
