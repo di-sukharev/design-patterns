@@ -40,4 +40,4 @@ Separates one single algorithm into steps. Assembles different algoritms combini
 
 ## Visitor
 
-TODO
+Visitor allows to add new features to a program without changing classes these features affect.
