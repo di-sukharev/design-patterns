@@ -35,3 +35,15 @@ Move call to business logic to a sub-class (command). All other components which
   - …
 - methods
   - businessOperation()
+
+### Client
+
+```javaScript
+saveDocument = new SaveDocCommand()
+
+btn = new Invoker()
+btn.setCommand(saveDocument)
+btn.executeCommand()
+
+on('CTRL+S', saveDocument)
+```
