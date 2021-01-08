@@ -56,8 +56,6 @@ The solution is to split the algorithm into separate methods and call them step 
 
 ### Client
 
-Example of how code is used
-
 ```javaScript
 concreteAlgorithm1 = new concreteClass1()
 concreteAlgorithm1.templateMethod()

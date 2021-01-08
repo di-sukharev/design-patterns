@@ -43,8 +43,6 @@ Each collection should have an Iterator. Iterator implements the iteration algor
 
 ### Client
 
-Example of how code is used
-
 ```javaScript
 tree = new TreeCollection
 treeIterator = tree.createIterator()

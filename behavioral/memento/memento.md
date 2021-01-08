@@ -40,8 +40,6 @@ Memento pattern creates snapshot of the Editor's State saving it to History list
 
 ### Client
 
-Example of how code is used
-
 ```javaScript
 originator = new Originator()
 caretaker = new Caretaker()

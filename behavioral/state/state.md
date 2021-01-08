@@ -49,8 +49,6 @@ All classes that implement state dependent logic should be based on one single i
 
 ### Client
 
-Example of how code is used
-
 ```javaScript
 initialState = new SomeConcreteState()
 context = new Context(initialState)

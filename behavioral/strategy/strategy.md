@@ -37,8 +37,6 @@ Separate different algorithms into classes implementing the same interface.
 
 ### Client
 
-Example of how code is used
-
 ```javaScript
 someStrategy = new SomeConcreteStrategy()
 context.setStrategy(someStrategy)
